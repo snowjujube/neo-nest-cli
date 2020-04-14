@@ -7,11 +7,13 @@ import { databaseConfig } from './config';
 
 @Module({
   imports: [ConfigModule.forRoot({
-    isGlobal: true, // 全局注册
+    // isGlobal: true, // 全局注册
     load: [
       databaseConfig // 数据库config
     ],
-  })],
+  }),
+
+  ],
 })
 export class AppModule {
 }
